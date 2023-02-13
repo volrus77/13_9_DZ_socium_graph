@@ -25,7 +25,7 @@ public:
     
 private:
     bool edgeExists(int v1, int v2);
-    //bool vertexExists(int v);
+    bool vertexExists(const string& name);
 
     int matrix[SIZE][SIZE]; // матрица смежности
     vector <std::string> userArr; // хранилище имён

@@ -21,7 +21,7 @@ int main()
     g.addEdge("Никита", "Настя");
     g.addEdge("Настя", "Ваня");
     g.addEdge("Ваня", "Женя");
-
+    g.addEdge("Вано", "Женя");// тестирование ошибки ввода неправильного имени
     g.findMinDistancesFloyd();
 
     return 0;

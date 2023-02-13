@@ -16,6 +16,8 @@ void Graph::addVertex(const string& name)
 // добавление ребра
 void Graph::addEdge(const string& name1, const string& name2, int weight)
 {
+    if (!vertexExists(name1) || !vertexExists(name2))
+        return;
     int v1{ 0 };
     int v2{ 0 };
     auto it1 = std::find(userArr.begin(), userArr.end(), name1);
@@ -32,6 +34,15 @@ void Graph::addEdge(const string& name1, const string& name2, int weight)
 bool Graph::edgeExists(int v1, int v2)
 {
     return matrix[v1][v2] > 0;
+}
+
+// проверка существования вершины
+bool Graph::vertexExists(const string& name)
+{
+    for (const auto& user : userArr)
+        if (user == name)
+            return true;
+    return false;
 }
 
 
