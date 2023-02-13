@@ -34,7 +34,8 @@ bool Graph::edgeExists(int v1, int v2)
     return matrix[v1][v2] > 0;
 }
 
-#define VERYBIGINT 1000000000 // очень большое число
+
+//#define VERYBIGINT 1000000000 // очень большое число
 
 void Graph::findMinDistancesFloyd()
 {

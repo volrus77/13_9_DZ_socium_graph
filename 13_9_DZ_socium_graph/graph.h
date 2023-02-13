@@ -1,9 +1,10 @@
 #pragma once
-#define SIZE 16
 #include <string>
 #include <vector>
 using namespace std;
 
+const int  SIZE = 16; // максимальное число вершин - людей
+const int VERYBIGINT = 1000000000; // очень большое число
 
 class Graph {
 public:
